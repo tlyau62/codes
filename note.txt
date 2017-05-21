@@ -1,0 +1,6 @@
+1. JDK 8: Lessons Learnt With Lambdas and Streams - https://www.youtube.com/watch?v=wZKmA6XodNE
+2. Java 8 Language Capabilities (lambda, default method, stream, parallel stream) - https://www.youtube.com/watch?v=j9nj5dTo54Q
+3. spring utils classes - https://www.youtube.com/watch?v=Zo9e3i8HxX4&t=1381s
+4. Scheduling Tasks - https://spring.io/guides/gs/scheduling-tasks/
+5. batch - https://github.com/spring-guides/gs-batch-processing
+6. HATEOAS - http://restcookbook.com/Basics/hateoas/

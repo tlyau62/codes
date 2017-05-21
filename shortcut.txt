@@ -1,0 +1,7 @@
+psvm - generate main()
+shift + F6 - change var name in multiple lines
+"string".var - String str = "String";
+select text hit ctrl + alt + v - same as above line
+alt + enter - create method stub
+alt + 1 - toggle project bar
+ctrl + alt + l - reformat code
