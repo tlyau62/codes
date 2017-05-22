@@ -5,3 +5,4 @@ select text hit ctrl + alt + v - same as above line
 alt + enter - create method stub
 alt + 1 - toggle project bar
 ctrl + alt + l - reformat code
+ctrl + q - peek class/method comment
