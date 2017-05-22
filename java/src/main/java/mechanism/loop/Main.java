@@ -11,7 +11,6 @@ import java.util.stream.IntStream;
  * 3 types of loops to find max
  */
 
-@FunctionalInterface
 interface Code {
     void execute();
 }
@@ -69,14 +68,14 @@ public class Main {
 
     public static void main(String[] args) {
         Random rand = new Random();
-        List<Integer> list = IntStream.rangeClosed(1, 10000000)
+        List<Integer> list = IntStream.rangeClosed(1, 10000)
                 .boxed()
                 .map(i -> rand.nextInt())
                 .collect(Collectors.toList());
 
         timer(() -> stream(list));
         timer(() -> externLoop(list));
-        timer(() -> recursion(null, list.iterator()));
+//        timer(() -> recursion(null, list.iterator()));
     }
 
 }

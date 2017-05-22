@@ -1,4 +1,4 @@
-package api.stream;
+package lambda.stream;
 
 import java.util.stream.Stream;
 
@@ -17,8 +17,6 @@ public class Main {
 
     public static void main(String[] args) {
         splitStrings();
-
-
     }
 
 }
