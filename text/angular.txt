@@ -1,0 +1,8 @@
+- Using Web Workers for more responsive apps – Jason Teplitz
+https://www.youtube.com/watch?v=Kz_zKXiNGSE
+
+- How fast can web apps be? | Tim Ruffles
+https://www.youtube.com/watch?v=CIG-PYSFgr0
+
+- Modern Frontend Engineering
+https://www.youtube.com/watch?v=-uA4a8y8q9I

@@ -48,7 +48,7 @@ public class Main {
     }
 
     private static void stream(List<Integer> nums) { // internal mechanism.loop
-//        Optional<Integer> max = nums.stream().reduce(Integer::max); // java.util.Optional<T> reduce(java.util.function.BinaryOperator<T> binaryOperator);
+//        optional<Integer> max = nums.stream().reduce(Integer::max); // java.util.optional<T> reduce(java.util.function.BinaryOperator<T> binaryOperator);
 
         Optional<Integer> max = nums.stream().max(Comparator.naturalOrder());
 

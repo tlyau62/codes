@@ -4,7 +4,7 @@ import java.util.function.Consumer;
 
 /**
  * Created by tl on 5/23/17.
- * application: execute-around pattern
+ * application: execute-around pattern for consuming an object
  */
 
 class Car {
