@@ -52,9 +52,17 @@ public class Main {
 
         Optional<Integer> max = nums.stream().max(Comparator.naturalOrder());
 
-//        OptionalInt max = nums.parallelStream().mapToInt(Integer::intValue).max(); // convert to intStream
+//        OptionalInt max = nums.stream().mapToInt(Integer::intValue).max(); // convert to intStream
 
         // :: - method reference
+
+        System.out.println(max.isPresent() ? max.get(): "empty list");
+    }
+
+    private static void parallelStream(List<Integer> nums) {
+        Optional<Integer> max = nums.parallelStream()
+                .peek(integer -> System.out.println(integer + ": " + Thread.currentThread()))
+                .max(Comparator.naturalOrder());
 
         System.out.println(max.isPresent() ? max.get(): "empty list");
     }
@@ -74,7 +82,8 @@ public class Main {
                 .collect(Collectors.toList());
 
         timer(() -> stream(list));
-        timer(() -> externLoop(list));
+        timer(() -> parallelStream(list));
+//        timer(() -> externLoop(list));
 //        timer(() -> recursion(null, list.iterator()));
     }
 
