@@ -22,7 +22,10 @@ public class GitHubLookupService {
         this.restTemplate = restTemplateBuilder.build();
     }
 
-    @Async // without @Async 3726, with @Async 2486
+    // @Async => caller no needs to wait
+    // return type is constrained to either void or Future
+    // without @Async 3726, with @Async 2486
+    @Async
     public CompletableFuture<User> findUser(String user) throws InterruptedException {
         logger.info("Looking up " + user);
         String url = String.format("https://api.github.com/users/%s", user);

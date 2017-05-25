@@ -1,4 +1,4 @@
-package staticClass;
+package design_pattern.staticClass;
 
 /**
  * Created by tl on 5/19/17.

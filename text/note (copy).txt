@@ -22,5 +22,12 @@ https://www.youtube.com/watch?v=zbeMDM-zDNI
 - http streaming, websocket, cors, caching
 https://www.youtube.com/watch?v=5PXo3T3VTjA
 
+- completableFuture,Future and Observable Rxjava
+https://stackoverflow.com/questions/35329845/difference-between-completablefuture-future-and-observable-rxjava
+
+- Thread, Future, Completable future
+https://www.youtube.com/watch?v=_EqitUOUpes
+https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true
+
 - string joining, static interface methods, default methods, sorting, grouping, combining predicates and functions, map's convenience functions
 https://www.youtube.com/watch?v=GphO9fWhlAg

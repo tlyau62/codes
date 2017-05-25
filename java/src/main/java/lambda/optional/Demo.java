@@ -1,6 +1,8 @@
 package lambda.optional;
 
+import javax.swing.text.html.Option;
 import java.util.*;
+import java.util.function.Function;
 
 /**
  * Created by tl on 5/23/17.
@@ -38,9 +40,19 @@ public class Demo {
                 .orElse("not found")); // type changes
 
 
-        // not use in this way
         System.out.println(Optional.ofNullable(search(integers, 4))
                 .orElse(-1));
+
+        System.out.println(Optional.ofNullable((Integer)null)
+                .map(integer -> "A")
+                .orElse("B")); // output B (Optional.empty())
+
+        System.out.println(Optional.ofNullable((Integer)null)
+                .map(integer -> "A")
+                .orElseGet(() -> {
+                    System.out.println("or else");
+                    return "B";
+                }));
     }
 
 }
