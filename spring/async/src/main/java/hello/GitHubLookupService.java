@@ -22,7 +22,7 @@ public class GitHubLookupService {
         this.restTemplate = restTemplateBuilder.build();
     }
 
-    // @Async => caller no needs to wait
+    // @Async => a job(thread) that is done in the future (can be cancelled)
     // return type is constrained to either void or Future
     // without @Async 3726, with @Async 2486
     @Async
