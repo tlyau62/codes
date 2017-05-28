@@ -28,6 +28,8 @@ import java.util.concurrent.CompletableFuture;
  * 3. https://stackoverflow.com/questions/37831100/upload-large-file-in-spring-using-filecopyutils-copy
  * 4. http://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/web/servlet/mvc/method/annotation/StreamingResponseBody.html
  * 5. http://www.journaldev.com/2651/spring-mvc-exception-handling-controlleradvice-exceptionhandler-handlerexceptionresolver
+ * 6. http://www.voidcn.com/blog/do_bset_yourself/article/p-5994564.html
+ * 7, http://shazsterblog.blogspot.hk/2016/02/asynchronous-streaming-request.html
  */
 @RestController
 @RequestMapping("/api")
