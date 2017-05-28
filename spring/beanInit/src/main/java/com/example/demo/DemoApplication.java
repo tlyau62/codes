@@ -59,7 +59,7 @@ public class DemoApplication {
 //    - a bean can be injected everywhere (without bean, a singleton class is needed to hold the object)
 //	  @Bean
 //    public TestBean testBean() {
-//	    return new TestBean("name: TestBean"); //
+//	    return new TestBean("name: TestBean"); // return to the spring container
 //    }
 
     @Bean
