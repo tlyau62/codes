@@ -1,4 +1,4 @@
-package dataStructure;
+package concurrency;
 
 import java.util.Set;
 import java.util.concurrent.CopyOnWriteArraySet;

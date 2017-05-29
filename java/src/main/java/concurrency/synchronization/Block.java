@@ -1,4 +1,4 @@
-package api.synchronization;
+package concurrency.synchronization;
 
 import java.util.concurrent.CompletableFuture;
 
