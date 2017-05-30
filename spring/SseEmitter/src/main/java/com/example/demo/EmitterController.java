@@ -13,7 +13,8 @@ import java.util.concurrent.CopyOnWriteArraySet;
 
 /**
  * Created by tl on 5/28/17.
- * - Sse (server-sent events)
+ * - Sse (server-sent events): one way communication
+ * - http://www.jianshu.com/p/c802257a3612
  */
 
 @RestController
@@ -27,12 +28,8 @@ public class EmitterController {
     @GetMapping("/message")
     public ResponseEntity<SseEmitter> getMessage() {
         SseEmitter emitter = new SseEmitter(); // each emitter corresponds to one client
-        emitter.onCompletion(() -> {
-            log.info(emitter + "async complete");
-            emitters.remove(emitter);
-        });
         emitters.add(emitter);
-        return ResponseEntity.ok().body(emitter);
+        return ResponseEntity.ok(emitter); // once client receives emitter, it starts listening without sending data to server
     }
 
     @PostMapping("/message")
@@ -43,13 +40,15 @@ public class EmitterController {
         for (SseEmitter emitter : emitters) {
             try {
                 emitter.send(msg, MediaType.TEXT_PLAIN);
-                emitter.complete(); // stop the emitter
             } catch (IOException e) {
+                log.info(emitter + ": async complete");
                 emitters.remove(emitter);
+                // emitter.complete(); already used by DefaultCallback (see source code)
+                // use this block instead, since callback on emitter.onComplete() will be called twice if client terminates the connection
             }
         }
 
-        return ResponseEntity.ok().body("message added");
+        return ResponseEntity.ok("message added");
     }
 
 }
