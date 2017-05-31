@@ -19,7 +19,7 @@ http://restcookbook.com/Basics/hateoas/
 - Creating REST-ful, Hypermedia-based Micro-services with Spring Boot (with http status code)
 https://www.youtube.com/watch?v=zbeMDM-zDNI
 
-- http streaming, websocket, cors, caching
+- spring mvc 4.2: http streaming, websocket, cors, caching
 https://www.youtube.com/watch?v=5PXo3T3VTjA
 
 - string joining, static interface methods, default methods, sorting, grouping, combining predicates and functions, map's convenience functions

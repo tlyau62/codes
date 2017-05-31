@@ -1,0 +1,2 @@
+- intro (explain + application)
+http://blog.techbridge.cc/2016/06/18/redis-introduction/
