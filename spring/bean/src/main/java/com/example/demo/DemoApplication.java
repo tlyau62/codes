@@ -39,6 +39,10 @@ public class DemoApplication {
         SpringApplication.run(DemoApplication.class, args);
     }
 
+    /**
+     * Implements BeanDefinitionRegistryPostProcessor to ensure this Bean is
+     * initialized before any other Beans.
+     */
     @Data
     public static class LiteBean implements InitializingBean, DisposableBean, BeanDefinitionRegistryPostProcessor {
 
