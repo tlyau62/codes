@@ -14,6 +14,7 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
  *
  * keys:
  * - authentication (who are you?) vs authorization (what are you allowed to do?)
+ *   - authentication: authorities, credential, details, principle
  * - AuthenticationManager(interface) vs AuthenticationProvider(implementation)
  *   - AuthenticationManager: rather than handling the authentication request itself,
  *     it delegates to a list of configured AuthenticationProvider s
@@ -52,5 +53,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         auth
             .inMemoryAuthentication() // provider
                 .withUser("user").password("password").roles("USER");
+
     }
 }
